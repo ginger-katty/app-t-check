@@ -1,9 +1,9 @@
-##Список задач (ToDo)
+## Список задач (ToDo)
 
-###Stack:
+### Stack:
 
--ReactJS (useState, useEffect)
--React Router
--React Transition Group
--Axios
--classnames
+- ReactJS (useState, useEffect)
+- React Router
+- React Transition Group
+- Axios
+- classnames
