@@ -1,0 +1,267 @@
+.tasks {
+  &:last-child {
+    margin-bottom: 25px;
+  }
+  padding-left: 20px;
+  a {
+    text-decoration: none;
+  }
+  &__title {
+    cursor: pointer;
+    &:hover {
+      .tasks__title-edit {
+        opacity: 0.2;
+      }
+    }
+    .tasks__title-edit {
+      opacity: 0;
+      cursor: pointer;
+      margin-left: 20px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &--grey {
+      color: #c9d1d3;
+    }
+
+    &--lime {
+      color: #b6e6bd;
+    }
+
+    &--purple {
+      color: #c355f5;
+    }
+
+    &--black {
+      color: #08001a;
+    }
+
+    &--red {
+      color: #ff6464;
+    }
+
+    &--green {
+      color: #42b883;
+    }
+
+    &--blue {
+      color: #64c4ed;
+    }
+
+    &--pink {
+      color: #ffbbcc;
+    }
+  }
+  &__items {
+    margin-top: 30px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #c9d1d3;
+      text-align: center;
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      input {
+        padding-left: 15px;
+        border: 0;
+        width: 70%;
+        font-size: 1rem;
+        cursor: pointer;
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 160px;
+        white-space: nowrap;
+      }
+      &:hover &-actions {
+        opacity: 0.8;
+      }
+      &-actions {
+        display: flex;
+
+        margin-right: 25px;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+        border: 1px solid #8d8c8f;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      &:hover button {
+        opacity: 0.7;
+      }
+      button {
+        opacity: 0;
+        font-size: 0.9rem;
+        background-color: #64c4ed;
+        border: 1px solid #64c4ed;
+        border-radius: 5px;
+        color: #fff;
+        width: 120px;
+        margin-right: 8px;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  .checkbox {
+    input {
+      display: none;
+    }
+    &:hover {
+      label {
+        background-color: #d3d3d3;
+        border: 1px solid #d3d3d3;
+        .checkbox-icon {
+          opacity: 1;
+          color: #a9a9a9;
+          transition: opacity 0.15s ease-in-out;
+        }
+      }
+    }
+    label {
+      margin-right: 10px;
+      border: 1px solid rgb(163, 159, 159);
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      box-sizing: border-box;
+    }
+    &-icon {
+      opacity: 0;
+    }
+    input:checked + label {
+      background-color: #0dcaf0;
+      border-color: #0dcaf0;
+      opacity: 0.8;
+      .checkbox-icon {
+        opacity: 1;
+        color: #fff;
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .tasks {
+    &__items {
+      &-row {
+        margin-bottom: 20px;
+        input {
+          padding-left: 3px;
+        }
+
+        &-actions {
+          margin-right: 25px;
+        }
+
+        button {
+          font-size: 0.6rem;
+          width: 56px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .tasks {
+    &__items {
+      &-row {
+        margin-bottom: 25px;
+        input {
+          padding-left: 12px;
+        }
+
+        &-actions {
+          margin-right: 20px;
+          margin-left: 6px;
+        }
+
+        button {
+          font-size: 0.8rem;
+          width: 90px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tasks {
+    &__items {
+      &-row {
+        margin-bottom: 25px;
+        input {
+          padding-left: 12px;
+          font-size: 1.2rem;
+        }
+
+        &-actions {
+          margin-right: 20px;
+          margin-left: 30px;
+        }
+
+        button {
+          font-size: 0.9rem;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .tasks {
+    &__items {
+      &-row {
+        margin-bottom: 25px;
+        input {
+          padding-left: 12px;
+          font-size: 1.2rem;
+        }
+
+        &-actions {
+          margin-right: 25px;
+          margin-left: 45px;
+        }
+
+        button {
+          font-size: 0.9rem;
+          width: 130px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1201px) {
+  .tasks {
+    &__items {
+      &-row {
+        margin-bottom: 30px;
+        input {
+          padding-left: 30px;
+          font-size: 1.3rem;
+        }
+
+        &-actions {
+          margin-right: 35px;
+          margin-left: 60px;
+        }
+
+        button {
+          font-size: 0.9rem;
+
+          width: 130px;
+        }
+      }
+    }
+  }
+}

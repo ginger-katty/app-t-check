@@ -1,0 +1,77 @@
+.button {
+  position: absolute;
+  margin-right: 20px;
+  margin-bottom: 30px;
+ 
+}
+.plus {
+  position: absolute;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.new {
+  z-index: 3;
+  padding: 12px;
+  right: 0;
+  &.new-btn {
+    width: 55px;
+    height: 55px;
+    bottom: 5px;
+  }
+  &.new-text {
+    bottom: 15px;
+  }
+}
+.active {
+  animation: 0.8s linear forwards rotate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.secondary {
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  right: 10px;
+}
+.regular {
+  bottom: 70px;
+}
+.habbit {
+  bottom: 115px;
+}
+.bt-text {
+  font-size: 12px;
+  right: 65px;
+}
+.group-enter {
+  opacity: 0;
+}
+.group-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.group-exit {
+  opacity: 1;
+}
+.group-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+// .calendar{
+//   &-icon{
+//     width: 30px;
+//     height: 30px;
+//   }
+//   p{
+// font-weight: 600;
+// margin-top: -23px;
+// font-size: 15px;
+//   }
+// }

@@ -1,0 +1,149 @@
+.add-list {
+  width: 100%;
+
+  &__popup {
+    width: 100vw;
+    height: 1000vw;
+    padding: 18px;
+    background-color: #ffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    // box-shadow: -1px 1px 4px 3px rgba(34, 60, 80, 0.2);
+
+    &--close {
+      position: relative;
+      left: 45%;
+      opacity: 0.8;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    &--button {
+      position: relative;
+      top: 2vh;
+      left: 32vw;
+      background-color: #0dcaf0;
+      color: #ffff;
+      border-radius: 30px;
+      border: 0;
+      padding: 10px 10px;
+      cursor: pointer;
+      width: 150px;
+      &:hover {
+        background-color: darken(#0dcaf0, 6%);
+      }
+      &:active {
+        background-color: darken(#0dcaf0, 10%);
+      }
+    }
+    &--colors {
+      position: relative;
+      top: 3vh;
+      padding-top: 20px;
+      border-top: 1px solid #c0c0c0;
+      display: flex;
+      justify-content: space-around;
+
+      .badg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-bottom: 60px;
+        &.round {
+          outline: 2px solid #ffff;
+          outline-offset: -7px;
+        }
+      }
+    }
+  }
+}
+.default {
+  top: 50vh;
+  box-shadow: -1px -5px 39px 6px rgba(34, 60, 80, 0.2);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #ffff;
+  z-index: 35;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .add-list {
+    &__popup {
+      &--button {
+        left: 70vw;
+        font-size: 12px;
+        width: 85px;
+      }
+      &--colors {
+        .badg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .add-list {
+    &__popup {
+      &--button {
+        left: 74vw;
+        font-size: 14px;
+        width: 100px;
+      }
+      &--colors {
+        .badg {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .add-list {
+    &__popup {
+      &--button {
+        left: 76vw;
+        font-size: 15px;
+        width: 150px;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .add-list {
+    &__popup {
+      &--button {
+        left: 76vw;
+        font-size: 15px;
+        width: 200px;
+      }
+    }
+  }
+}
+@media (min-width: 1201px) {
+  .add-list {
+    &__popup {
+      &--button {
+        left: 78vw;
+        font-size: 19px;
+        width: 220px;
+      }
+      &--colors {
+        .badg {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+@media (max-height: 479px) {
+  .default {
+    top: 6vh;
+  }
+}
+@media (min-height: 480px) and (max-height: 600px) {
+  .default {
+    top: 28vh;
+  }
+}

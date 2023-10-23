@@ -1,0 +1,94 @@
+@import '~bootstrap/scss/bootstrap';
+@import './components/buttons/buttons.scss';
+@import './components/placeholder/placeholder.scss';
+@import './components/menu/burger/burger.scss';
+@import './components/menu/menu.scss';
+@import './components/menu/list.scss';
+@import './components/menu/addlist/addlist.scss';
+@import './components/menu//badge/badge.scss';
+@import './components/tasks/tasks.scss';
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  overflow:hidden;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.field {
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 8px 12px;
+  &:focus {
+    border-color: #e8e3e3;
+  }
+}
+
+.shift {
+  background-color: transparent;
+  height: 97vh;
+  position: relative;
+  padding-top: 40px;
+  transition: all 0.6s;
+  margin-top: 2px;
+  right: 0;
+  transition: all 0.6s;
+  right: 0;
+  
+}
+.right {
+  right: -56%;
+  transition: all 0.5s;
+  // display: none;
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .right {
+    right: -80%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .right {
+    right: -57%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .right {
+    right: -46%;
+  }
+
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .right {
+    right: -44%;
+  }
+
+}
+@media (min-width: 1201px) {
+  .right {
+    right: -45%;
+  }
+
+}
+.todo {
+
+  &__tasks {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+  }
+}
